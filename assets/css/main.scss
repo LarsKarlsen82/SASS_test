@@ -1,0 +1,20 @@
+$background-Black: #000;
+$background-red: rgb(148, 0, 0);
+$backgroung-yellow: rgb(238, 255, 0);
+$bg-light: #efefef;
+
+//MIXINS
+@mixin dark{
+    background-color:$bg-light;
+    color: $background-Black;
+    font-family: sans-serif;
+    h1 {
+        font-weight: 300;
+        text-transform: uppercase;
+        color: blue;
+    }
+
+}
+body{
+    @include dark;
+}
